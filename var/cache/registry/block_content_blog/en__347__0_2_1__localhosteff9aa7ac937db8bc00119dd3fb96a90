@@ -1,0 +1,136 @@
+a:2:{s:4:"data";a:2:{s:10:"javascript";s:1961:"<script>
+(function(_, $) {
+    $.ceEvent('on', 'ce.commoninit', function(context) {
+        var elm = context.find('#scroll_list_77');
+
+        var item = 1,
+            // default setting of carousel
+            itemsDesktop = 3,
+            itemsDesktopSmall = 3;
+            itemsTablet = 2;
+
+        if (item > 3) {
+            itemsDesktop = item;
+            itemsDesktopSmall = item - 1;
+            itemsTablet = item - 2;
+        } else if (item == 1) {
+            itemsDesktop = itemsDesktopSmall = itemsTablet = 1;
+        } else {
+            itemsDesktop = item;
+            itemsDesktopSmall = itemsTablet = item - 1;
+        }
+
+                function outsideNav () {
+            if(this.options.items >= this.itemsAmount){
+                $("#owl_outside_nav_77").hide();
+            } else {
+                $("#owl_outside_nav_77").show();
+            }
+        }
+        
+        if (elm.length) {
+            elm.owlCarousel({
+                direction: 'ltr',
+                items: item,
+                itemsDesktop: [1199, itemsDesktop],
+                itemsDesktopSmall: [979, itemsDesktopSmall],
+                itemsTablet: [768, itemsTablet],
+                itemsMobile: [479, 1],
+                                                autoPlay: false,
+                                slideSpeed: 400,
+                stopOnHover: true,
+                                pagination: false,
+                beforeInit: function () {
+                    $.ceEvent('trigger', 'ce.scroller_init_with_quantity.beforeInit', [this]);
+                },
+                            afterInit: outsideNav,
+                afterUpdate : outsideNav
+            });
+
+              $('#owl_prev_77000').click(function(){
+                elm.trigger('owl.prev');
+              });
+              $('#owl_next_77000').click(function(){
+                elm.trigger('owl.next');
+              });
+
+            
+        }
+    });
+}(Tygh, Tygh.$));
+</script>";s:7:"content";s:3247:"        <div class="ty-mainbox-simple-container clearfix">
+                    <h2 class="ty-mainbox-simple-title">
+                                                    Blog
+                                
+            </h2>
+                <div class="ty-mainbox-simple-body">
+
+    <div class="owl-theme ty-owl-controls">
+        <div class="owl-controls clickable owl-controls-outside" id="owl_outside_nav_77">
+            <div class="owl-buttons">
+                <div id="owl_prev_77000" class="owl-prev"><span 
+        class="ty-icon ty-icon-left-open-thin"
+                                    ></span></div>
+                <div id="owl_next_77000" class="owl-next"><span 
+        class="ty-icon ty-icon-right-open-thin"
+                                    ></span></div>
+            </div>
+        </div>
+    </div>
+
+<div class="ty-mb-l">
+    <div class="ty-blog-recent-posts-scroller">
+        <div id="scroll_list_77" class="owl-carousel ty-scroller-list">
+
+                    <div class="ty-blog-recent-posts-scroller__item">
+
+                <div class="ty-blog-recent-posts-scroller__img-block">
+                    <a href="http://localhost/multivendor_v4.17.2/blog/how-to-distribute-money-between-vendors/">
+                        <img class="ty-pict     cm-image" alt="" title="" id="det_img_10" width="894" height="305" src="http://localhost/multivendor_v4.17.2/images/blog/1/3.png" />
+
+                    </a>
+                </div>
+
+                <a href="http://localhost/multivendor_v4.17.2/blog/how-to-distribute-money-between-vendors/">How to Distribute Money between Vendors</a>
+
+                <div class="ty-blog__date">11/11/2014</div>
+
+            </div>
+                    <div class="ty-blog-recent-posts-scroller__item">
+
+                <div class="ty-blog-recent-posts-scroller__img-block">
+                    <a href="http://localhost/multivendor_v4.17.2/blog/why-you-need-a-subscription-model-for-your-vendors/">
+                        <img class="ty-pict     cm-image" alt="" title="" id="det_img_9" width="894" height="305" src="http://localhost/multivendor_v4.17.2/images/blog/1/2.png" />
+
+                    </a>
+                </div>
+
+                <a href="http://localhost/multivendor_v4.17.2/blog/why-you-need-a-subscription-model-for-your-vendors/">Why You Need a Subscription Model for Your Vendors</a>
+
+                <div class="ty-blog__date">11/09/2014</div>
+
+            </div>
+                    <div class="ty-blog-recent-posts-scroller__item">
+
+                <div class="ty-blog-recent-posts-scroller__img-block">
+                    <a href="http://localhost/multivendor_v4.17.2/blog/check-out-cs-cart-marketplace/">
+                        <img class="ty-pict     cm-image" alt="" title="" id="det_img_8" width="894" height="305" src="http://localhost/multivendor_v4.17.2/images/blog/1/1.png" />
+
+                    </a>
+                </div>
+
+                <a href="http://localhost/multivendor_v4.17.2/blog/check-out-cs-cart-marketplace/">Check out CS-Cart Marketplace</a>
+
+                <div class="ty-blog__date">11/06/2014</div>
+
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+<!-- Inline script moved to the bottom of the page -->
+
+</div>
+    </div>
+";}s:6:"expiry";i:0;}

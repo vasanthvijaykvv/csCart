@@ -1,0 +1,728 @@
+a:2:{s:4:"data";a:2:{s:10:"javascript";s:2827:"<script>
+(function(_, $) {
+    $.ceEvent('on', 'ce.commoninit', function(context) {
+        var elm = context.find('#scroll_list_74_657bf966bc0f7');
+
+        $('.ty-float-left:contains(.ty-scroller-list),.ty-float-right:contains(.ty-scroller-list)').css('width', '100%');
+
+        var item = 4,
+            // default setting of carousel
+            itemsDesktop = 4,
+            itemsDesktopSmall = 3,
+            itemsTablet = 2,
+            itemsMobile = 1;
+
+        if (item > 3) {
+            itemsDesktop = item;
+            itemsDesktopSmall = item - 1;
+            itemsTablet = item - 2;
+        } else if (item == 1) {
+            itemsDesktop = itemsDesktopSmall = itemsTablet = 1;
+        } else {
+            itemsDesktop = item;
+            itemsDesktopSmall = itemsTablet = item - 1;
+        }
+
+        var desktop = [1199, itemsDesktop],
+            desktopSmall = [979, itemsDesktopSmall],
+            tablet = [768, itemsTablet],
+            mobile = [479, itemsMobile];
+
+                function outsideNav () {
+            if(this.options.items >= this.itemsAmount){
+                $("#owl_outside_nav_74_657bf966bc0f7").hide();
+            } else {
+                $("#owl_outside_nav_74_657bf966bc0f7").show();
+            }
+        }
+        function afterInit () {
+            outsideNav.apply(this);
+            $.ceEvent('trigger', 'ce.scroller.afterInit', [this]);
+        }
+        function afterUpdate () {
+            outsideNav.apply(this);
+            $.ceEvent('trigger', 'ce.scroller.afterUpdate', [this]);
+        }
+                function beforeInit () {
+            $.ceEvent('trigger', 'ce.scroller.beforeInit', [this]);
+        }
+        function beforeUpdate () {
+            $.ceEvent('trigger', 'ce.scroller.beforeUpdate', [this]);
+        }
+
+        if (elm.length) {
+            elm.owlCarousel({
+                direction: 'ltr',
+                items: item,
+                itemsDesktop: desktop,
+                itemsDesktopSmall: desktopSmall,
+                itemsTablet: tablet,
+                itemsMobile: mobile,
+                                scrollPerPage: true,
+                                                autoPlay: false,
+                                lazyLoad: true,
+                slideSpeed: 400,
+                stopOnHover: true,
+                                pagination: false,
+                beforeInit: beforeInit,
+                afterInit: afterInit,
+                beforeUpdate: beforeUpdate,
+                afterUpdate: afterUpdate
+            });
+            
+              $('#owl_prev_74000').click(function(){
+                elm.trigger('owl.prev');
+              });
+              $('#owl_next_74000').click(function(){
+                elm.trigger('owl.next');
+              });
+            
+        }
+    });
+}(Tygh, Tygh.$));
+</script>";s:7:"content";s:18767:"        <div class="ty-mainbox-simple-container clearfix homepage-hotdeals">
+                    <h2 class="ty-mainbox-simple-title">
+                                                    Hot deals
+                                
+            </h2>
+                <div class="ty-mainbox-simple-body">
+                        
+
+
+        
+    <div class="owl-theme ty-owl-controls">
+        <div class="owl-controls clickable owl-controls-outside"  id="owl_outside_nav_74_657bf966bc0f7">
+            <div class="owl-buttons">
+                <div id="owl_prev_74000" class="owl-prev"><span 
+        class="ty-icon ty-icon-left-open-thin"
+                                    ></span></div>
+                <div id="owl_next_74000" class="owl-next"><span 
+        class="ty-icon ty-icon-right-open-thin"
+                                    ></span></div>
+            </div>
+        </div>
+    </div>
+
+<div id="scroll_list_74_657bf966bc0f7" class="owl-carousel ty-scroller-list ty-scroller"
+    data-ca-scroller-item="4"
+    data-ca-scroller-item-desktop="4"
+    data-ca-scroller-item-desktop-small="3"
+    data-ca-scroller-item-tablet="2"
+    data-ca-scroller-item-mobile="1"
+>
+                    <div class="ty-scroller-list__item ty-scroller__item">
+                                    <div class="ty-scroller-list__img-block">
+                                <a href="http://localhost/multivendor_v4.17.2/apparel/mens-clothing/t-shirt-color-white/">                            <img class="ty-pict   lazyOwl  cm-image" alt="" title="" data-srcset="http://localhost/multivendor_v4.17.2/images/thumbnails/320/320/detailed/1/t-6.jpg 2x" width="160" height="160" data-src="http://localhost/multivendor_v4.17.2/images/thumbnails/160/160/detailed/1/t-6.jpg" />
+
+</a>
+                            </div>
+            <div class="ty-scroller-list__description">
+                            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ty-simple-list clearfix">
+                <form action="http://localhost/multivendor_v4.17.2/" method="post" name="product_form_74000scr_74_657bf966bc0f7000278" enctype="multipart/form-data" class="cm-disable-empty-files  cm-ajax cm-ajax-full-render cm-ajax-status-middle ">
+<input type="hidden" name="result_ids" value="cart_status*,wish_list*,checkout*,account_info*" />
+<input type="hidden" name="redirect_url" value="index.php?currency=GBP" />
+<input type="hidden" name="product_data[scr_74_657bf966bc0f7000278][product_id]" value="278" />
+
+            
+                                            
+            
+
+            <bdi>            <a href="http://localhost/multivendor_v4.17.2/apparel/mens-clothing/t-shirt-color-white/" class="product-title" title="T-shirt, Color: White" >T-shirt, Color: White</a>    
+</bdi>
+                
+                    
+
+
+            
+
+                                    
+
+
+            
+                            
+            
+            
+                            
+                        
+                                        
+
+
+                            
+
+                                                                    <input type="hidden" name="security_hash" class="cm-no-hide-input" value="a465b59d5f7db7be134c3c12a6bf56f1" /></form>
+
+        
+    </div>
+            </div>
+            
+        </div>
+        
+                    <div class="ty-scroller-list__item ty-scroller__item">
+                                    <div class="ty-scroller-list__img-block">
+                                <a href="http://localhost/multivendor_v4.17.2/apparel/mens-clothing/t-shirt-color-black/">                            <img class="ty-pict   lazyOwl  cm-image" alt="" title="" data-srcset="http://localhost/multivendor_v4.17.2/images/thumbnails/320/320/detailed/1/t-4.jpg 2x" width="160" height="160" data-src="http://localhost/multivendor_v4.17.2/images/thumbnails/160/160/detailed/1/t-4.jpg" />
+
+</a>
+                            </div>
+            <div class="ty-scroller-list__description">
+                            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ty-simple-list clearfix">
+                <form action="http://localhost/multivendor_v4.17.2/" method="post" name="product_form_74000scr_74_657bf966bc0f7000280" enctype="multipart/form-data" class="cm-disable-empty-files  cm-ajax cm-ajax-full-render cm-ajax-status-middle ">
+<input type="hidden" name="result_ids" value="cart_status*,wish_list*,checkout*,account_info*" />
+<input type="hidden" name="redirect_url" value="index.php?currency=GBP" />
+<input type="hidden" name="product_data[scr_74_657bf966bc0f7000280][product_id]" value="280" />
+
+            
+                                            
+            
+
+            <bdi>            <a href="http://localhost/multivendor_v4.17.2/apparel/mens-clothing/t-shirt-color-black/" class="product-title" title="T-shirt, Color: Black" >T-shirt, Color: Black</a>    
+</bdi>
+                
+                    
+
+
+            
+
+                                    
+
+
+            
+                            
+            
+            
+                            
+                        
+                                        
+
+
+                            
+
+                                                                    <input type="hidden" name="security_hash" class="cm-no-hide-input" value="a465b59d5f7db7be134c3c12a6bf56f1" /></form>
+
+        
+    </div>
+            </div>
+            
+        </div>
+        
+                    <div class="ty-scroller-list__item ty-scroller__item">
+                                    <div class="ty-scroller-list__img-block">
+                                <a href="http://localhost/multivendor_v4.17.2/apparel/mens-clothing/t-shirt-color-blue/">                            <img class="ty-pict   lazyOwl  cm-image" alt="" title="" data-srcset="http://localhost/multivendor_v4.17.2/images/thumbnails/320/320/detailed/1/t-7.jpg 2x" width="160" height="160" data-src="http://localhost/multivendor_v4.17.2/images/thumbnails/160/160/detailed/1/t-7.jpg" />
+
+</a>
+                            </div>
+            <div class="ty-scroller-list__description">
+                            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ty-simple-list clearfix">
+                <form action="http://localhost/multivendor_v4.17.2/" method="post" name="product_form_74000scr_74_657bf966bc0f7000282" enctype="multipart/form-data" class="cm-disable-empty-files  cm-ajax cm-ajax-full-render cm-ajax-status-middle ">
+<input type="hidden" name="result_ids" value="cart_status*,wish_list*,checkout*,account_info*" />
+<input type="hidden" name="redirect_url" value="index.php?currency=GBP" />
+<input type="hidden" name="product_data[scr_74_657bf966bc0f7000282][product_id]" value="282" />
+
+            
+                                            
+            
+
+            <bdi>            <a href="http://localhost/multivendor_v4.17.2/apparel/mens-clothing/t-shirt-color-blue/" class="product-title" title="T-shirt, Color: Blue" >T-shirt, Color: Blue</a>    
+</bdi>
+                
+                    
+
+
+            
+
+                                    
+
+
+            
+                            
+            
+            
+                            
+                        
+                                        
+
+
+                            
+
+                                                                    <input type="hidden" name="security_hash" class="cm-no-hide-input" value="a465b59d5f7db7be134c3c12a6bf56f1" /></form>
+
+        
+    </div>
+            </div>
+            
+        </div>
+        
+                    <div class="ty-scroller-list__item ty-scroller__item">
+                                    <div class="ty-scroller-list__img-block">
+                                <a href="http://localhost/multivendor_v4.17.2/computers/tablets/nokia-n1-pad-7-9-quad-core-64bit-2-3ghz-2gb-32gb-android-5-0/">                            <img class="ty-pict   lazyOwl  cm-image" alt="" title="" data-srcset="http://localhost/multivendor_v4.17.2/images/thumbnails/320/320/detailed/1/nokia_n1_perspectives_-_app.jpg 2x" width="160" height="160" data-src="http://localhost/multivendor_v4.17.2/images/thumbnails/160/160/detailed/1/nokia_n1_perspectives_-_app.jpg" />
+
+</a>
+                            </div>
+            <div class="ty-scroller-list__description">
+                            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ty-simple-list clearfix">
+                <form action="http://localhost/multivendor_v4.17.2/" method="post" name="product_form_74000scr_74_657bf966bc0f7000247" enctype="multipart/form-data" class="cm-disable-empty-files  cm-ajax cm-ajax-full-render cm-ajax-status-middle ">
+<input type="hidden" name="result_ids" value="cart_status*,wish_list*,checkout*,account_info*" />
+<input type="hidden" name="redirect_url" value="index.php?currency=GBP" />
+<input type="hidden" name="product_data[scr_74_657bf966bc0f7000247][product_id]" value="247" />
+
+            
+                                            
+            
+
+            <bdi>            <a href="http://localhost/multivendor_v4.17.2/computers/tablets/nokia-n1-pad-7-9-quad-core-64bit-2-3ghz-2gb-32gb-android-5-0/" class="product-title" title="Nokia N1 Pad 7.9&quot; Quad-Core 64bit 2.3GHz 2GB 32GB Android 5.0" >Nokia N1 Pad 7.9" Quad-Core 64bit 2.3GHz 2GB 32GB Android 5.0</a>    
+</bdi>
+                
+                    
+
+
+            
+
+                                    
+
+
+            
+                            
+            
+            
+                            
+                        
+                                        
+
+
+                            
+
+                                                                    <input type="hidden" name="security_hash" class="cm-no-hide-input" value="a465b59d5f7db7be134c3c12a6bf56f1" /></form>
+
+        
+    </div>
+            </div>
+            
+        </div>
+        
+                    <div class="ty-scroller-list__item ty-scroller__item">
+                                    <div class="ty-scroller-list__img-block">
+                                <a href="http://localhost/multivendor_v4.17.2/video-games/x-box-one/x-box-one/">                            <img class="ty-pict   lazyOwl  cm-image" alt="" title="" data-srcset="http://localhost/multivendor_v4.17.2/images/thumbnails/320/320/detailed/1/i.jpg 2x" width="160" height="160" data-src="http://localhost/multivendor_v4.17.2/images/thumbnails/160/160/detailed/1/i.jpg" />
+
+</a>
+                            </div>
+            <div class="ty-scroller-list__description">
+                            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ty-simple-list clearfix">
+                <form action="http://localhost/multivendor_v4.17.2/" method="post" name="product_form_74000scr_74_657bf966bc0f7000248" enctype="multipart/form-data" class="cm-disable-empty-files  cm-ajax cm-ajax-full-render cm-ajax-status-middle ">
+<input type="hidden" name="result_ids" value="cart_status*,wish_list*,checkout*,account_info*" />
+<input type="hidden" name="redirect_url" value="index.php?currency=GBP" />
+<input type="hidden" name="product_data[scr_74_657bf966bc0f7000248][product_id]" value="248" />
+
+            
+                                            
+            
+
+            <bdi>            <a href="http://localhost/multivendor_v4.17.2/video-games/x-box-one/x-box-one/" class="product-title" title="X-Box One" >X-Box One</a>    
+</bdi>
+                
+                    
+
+
+            
+
+                                    
+
+
+            
+                            
+            
+            
+                            
+                        
+                                        
+
+
+                            
+
+                                                                    <input type="hidden" name="security_hash" class="cm-no-hide-input" value="a465b59d5f7db7be134c3c12a6bf56f1" /></form>
+
+        
+    </div>
+            </div>
+            
+        </div>
+        
+                    <div class="ty-scroller-list__item ty-scroller__item">
+                                    <div class="ty-scroller-list__img-block">
+                                <a href="http://localhost/multivendor_v4.17.2/computers/tablets/apple-ipad-with-retina-display-wi-fi-32gb-white/">                            <img class="ty-pict   lazyOwl  cm-image" alt="" title="" data-srcset="http://localhost/multivendor_v4.17.2/images/thumbnails/320/320/detailed/0/ipad-white-1.jpg 2x" width="160" height="160" data-src="http://localhost/multivendor_v4.17.2/images/thumbnails/160/160/detailed/0/ipad-white-1.jpg" />
+
+</a>
+                            </div>
+            <div class="ty-scroller-list__description">
+                            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ty-simple-list clearfix">
+                <form action="http://localhost/multivendor_v4.17.2/" method="post" name="product_form_74000scr_74_657bf966bc0f7000241" enctype="multipart/form-data" class="cm-disable-empty-files  cm-ajax cm-ajax-full-render cm-ajax-status-middle ">
+<input type="hidden" name="result_ids" value="cart_status*,wish_list*,checkout*,account_info*" />
+<input type="hidden" name="redirect_url" value="index.php?currency=GBP" />
+<input type="hidden" name="product_data[scr_74_657bf966bc0f7000241][product_id]" value="241" />
+
+            
+                                            
+            
+
+            <bdi>            <a href="http://localhost/multivendor_v4.17.2/computers/tablets/apple-ipad-with-retina-display-wi-fi-32gb-white/" class="product-title" title="Apple® - iPad® with Retina® display Wi-Fi - 32GB - White" >Apple® - iPad® with Retina® display Wi-Fi - 32GB - White</a>    
+</bdi>
+                
+                    
+
+
+            
+
+                                    
+
+
+            
+                            
+            
+            
+                            
+                        
+                                        
+
+
+                            
+
+                                                                    <input type="hidden" name="security_hash" class="cm-no-hide-input" value="a465b59d5f7db7be134c3c12a6bf56f1" /></form>
+
+        
+    </div>
+            </div>
+            
+        </div>
+        
+                    <div class="ty-scroller-list__item ty-scroller__item">
+                                    <div class="ty-scroller-list__img-block">
+                                <a href="http://localhost/multivendor_v4.17.2/computers/desktops/packard-bell-onetwo/">                            <img class="ty-pict   lazyOwl  cm-image" alt="" title="" data-srcset="http://localhost/multivendor_v4.17.2/images/thumbnails/320/320/detailed/1/pocket_bell.jpg 2x" width="160" height="160" data-src="http://localhost/multivendor_v4.17.2/images/thumbnails/160/160/detailed/1/pocket_bell.jpg" />
+
+</a>
+                            </div>
+            <div class="ty-scroller-list__description">
+                            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ty-simple-list clearfix">
+                <form action="http://localhost/multivendor_v4.17.2/" method="post" name="product_form_74000scr_74_657bf966bc0f7000244" enctype="multipart/form-data" class="cm-disable-empty-files  cm-ajax cm-ajax-full-render cm-ajax-status-middle ">
+<input type="hidden" name="result_ids" value="cart_status*,wish_list*,checkout*,account_info*" />
+<input type="hidden" name="redirect_url" value="index.php?currency=GBP" />
+<input type="hidden" name="product_data[scr_74_657bf966bc0f7000244][product_id]" value="244" />
+
+            
+                                            
+            
+
+            <bdi>            <a href="http://localhost/multivendor_v4.17.2/computers/desktops/packard-bell-onetwo/" class="product-title" title="Packard Bell OneTwo" >Packard Bell OneTwo</a>    
+</bdi>
+                
+                    
+
+
+            
+
+                                    
+
+
+            
+                            
+            
+            
+                            
+                        
+                                        
+
+
+                            
+
+                                                                    <input type="hidden" name="security_hash" class="cm-no-hide-input" value="a465b59d5f7db7be134c3c12a6bf56f1" /></form>
+
+        
+    </div>
+            </div>
+            
+        </div>
+        
+                    <div class="ty-scroller-list__item ty-scroller__item">
+                                    <div class="ty-scroller-list__img-block">
+                                <a href="http://localhost/multivendor_v4.17.2/electronics/cell-phones/apple-iphone/apple-iphone-5c-32gb-cell-phone-green/">                            <img class="ty-pict   lazyOwl  cm-image" alt="" title="" data-srcset="http://localhost/multivendor_v4.17.2/images/thumbnails/320/320/detailed/1/iphone_green.png 2x" width="160" height="160" data-src="http://localhost/multivendor_v4.17.2/images/thumbnails/160/160/detailed/1/iphone_green.png" />
+
+</a>
+                            </div>
+            <div class="ty-scroller-list__description">
+                            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ty-simple-list clearfix">
+                <form action="http://localhost/multivendor_v4.17.2/" method="post" name="product_form_74000scr_74_657bf966bc0f7000245" enctype="multipart/form-data" class="cm-disable-empty-files  cm-ajax cm-ajax-full-render cm-ajax-status-middle ">
+<input type="hidden" name="result_ids" value="cart_status*,wish_list*,checkout*,account_info*" />
+<input type="hidden" name="redirect_url" value="index.php?currency=GBP" />
+<input type="hidden" name="product_data[scr_74_657bf966bc0f7000245][product_id]" value="245" />
+
+            
+                                            
+            
+
+            <bdi>            <a href="http://localhost/multivendor_v4.17.2/electronics/cell-phones/apple-iphone/apple-iphone-5c-32gb-cell-phone-green/" class="product-title" title="Apple - iPhone 5c 32GB Cell Phone - Green" >Apple - iPhone 5c 32GB Cell Phone - Green</a>    
+</bdi>
+                
+                    
+
+
+            
+
+                                    
+
+
+            
+                            
+            
+            
+                            
+                        
+                                        
+
+
+                            
+
+                                                                    <input type="hidden" name="security_hash" class="cm-no-hide-input" value="a465b59d5f7db7be134c3c12a6bf56f1" /></form>
+
+        
+    </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+<!-- Inline script moved to the bottom of the page -->
+
+</div>
+    </div>
+";}s:6:"expiry";i:0;}
